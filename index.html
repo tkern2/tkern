@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body class="text-slate-300 bg-sky-800 font-monts">
+
+<!-- Nav menu/mobile menu -->
+
+    <header class="py-6 bg-sky-900">
+        <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+            <div class="text-xl font-bold">tony.kern</div>
+            <div class="hidden md:flex space-x-12 items-center font-bold">
+                <a href="#About" class="hover:text-slate-400">About</a>
+                <a href="#Work" class="hover:text-slate-400">My Work</a>
+                <a href="#Contact" class="hover:text-slate-400">Contact Me</a>
+            </div>
+            <div class="md:hidden">
+                <button class="menu-button"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                  </svg></button>
+            </div>
+        </div>
+        <div class="hidden mobile-menu md:hidden pl-10 pt-6">
+            <ul class="py-2 space-y-4">
+                <li class="py-1 hover:font-bold item"><a href="#About" class="anchor">About</a></li>
+                <li class="py-1 hover:font-bold item"><a href="#Work" class="anchor">My Work</a></li>
+                <li class="py-1 hover:font-bold item"><a href="#Contact" class="anchor">Contact Me</a></li>
+            </ul>
+        </div>
+    </header>
+    <button class="fixed return-top text-slate-400 right-12 bottom-12"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 lg:h-12 lg:w-12" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd" />
+      </svg>
+    </button>
+
+<!-- Greeting section -->
+
+    <section id="greeting">
+        <div class="container flex justify-between lg:space-x-18 items-center mx-auto px-8 md:px-14 lg:px-24 w-full lg:w-1/2 h-auto py-20">
+            <div>
+                <h1 class="text-6xl font-bold font-dancing pb-8">
+                    Hello! I'm Tony.
+                </h1>
+                <h2 class="font-monts font-bold md:text-center">
+                    a web developer.
+                </h2>
+            </div>
+            <div class="">
+                <img src="img/waving.png" alt="me-waving" class="h-60 w-auto">
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- About Me -->
+
+    <section id="About" class="bg-sky-600">
+        <div class="container mx-auto space-y-8 bg-sky-600 flex-col flex-grow justify-center items-center px-8 md:px-14 lg:px-24 lg:w-1/2 w-full h-auto py-20">
+            <div class="">
+                <img src="img/Me-laptop.PNG" alt="me-laptop" class="h-44 w-auto mx-auto">
+            </div>
+            <div class="text-center px-8">
+                <h2 class="font-bold text-2xl text-slate-300 pb-8">Who am I?</h2>
+                <p class="font-semibold text-md text-slate-300 leading-8">I'm a passionate web developer eager to start the next project. I enjoy facing challenges and solving the puzzles necessary to complete those challenges.</p>
+            </div>
+            
+            <div class="text-center px-8 py-4">
+                <h1 class="font-bold text-2xl text-slate-300 pt-8 pb-6">What can I do?</h1>
+            </div>
+            
+            <div class="container flex px-4 py-4 justify-center items-center">
+                <img src="img/coding.png" alt="code" class="rounded-3xl h-44">
+                <p class="font-semibold text-sm md:text-md text-slate-300 leading-8 lg:w-1/2 text-center md:text-right px-8">Turn your vision into custom code ready to hit the Web and show the world.</p>
+            </div>
+            <div class="container flex px-4 py-8 justify-center items-center">
+                <p class="font-semibold text-sm md:text-md text-slate-300 leading-8 lg:w-1/2 text-center md:text-left px-8">Create responsive, fully-functioning websites and web applications suited for both mobile and desktop</p>
+                <img src="img/function.png" alt="function" class="rounded-3xl h-44">
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!-- My work -->
+
+    <section id="Work" class="bg-sky-600">
+        <div class="container mx-auto lg:w-1/2 pb-20">
+            <div class="text-center px-8 py-4">
+                <h1 class="font-bold text-2xl text-slate-300 pb-8">What I've made</h1>
+            </div>
+            <div class="grid grid-cols-2 md:grid-rows-1 mx-auto gap-12 justify-items-center px-12 py-8">
+                <div class="card hover:text-slate-400">
+                    <a href="./Weather_App/public/index.html"><img src="img/WeatherAppSS.png" alt="weather" class="md:h-32 h-28 w-auto rounded-2xl mx-auto"></a>
+                    <h1 class="text-center font-semibold pt-6">An Accuweather API connected weather application that returns real-time data.</h1>
+                </div>
+                <div class="card hover:text-slate-400">
+                    <a href="./Todo_List/public/index.html"><img src="img/TodoSS.png" alt="todo" class="md:h-32 h-28 w-auto rounded-2xl mx-auto"></a>
+                    <h1 class="text-center font-semibold pt-6">A customizable Todo list that allows you to add, remove, and search for list items.</h1>
+                </div>
+                <div class="card hover:text-slate-400">
+                    <a href="./Gamer_Quiz/public/index.html"><img src="img/QuizSS.png" alt="quiz" class="md:h-32 h-28 w-auto rounded-2xl mx-auto"></a>
+                    <h1 class="text-center font-semibold pt-6">A fun quiz that tells you how much of a gamer you are based on your answers.</h1>
+                </div>
+                <div class="card hover:text-slate-400">
+                    <a href="./Resume/public/index.html"><img src="img/ResumeSS.png" alt="resume" class="md:h-32 h-28 w-auto rounded-2xl mx-auto"></a>
+                    <h1 class="text-center font-semibold pt-6">My resume recreated in HTML format to be viewed in the browser.</h1>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Contacts -->
+
+    <section id="Contact">
+        <div class="container flex flex-col w-full mx-auto py-12">
+            <h1 class="font-bold py-10 text-3xl text-slate-300 text-center mx-auto">I'm ready to work!</h1>
+            <p class="w-2/3 mx-auto text-center leading-8">
+                If you are looking to hire a Web Developer that loves to build, or just want somebody to collab with, please feel free to email me <span><a href="mailto:tony.kern.dev@gmail.com" class="font-bold text-lg">here</a></span>. You can also click one of the links down below!
+            </p>
+            <div class="mx-auto py-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-center" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+            </div>
+        </div>
+
+
+        <footer class="py-8 bg-sky-900">
+            <div class="container flex flex-col mx-auto">
+            <div class="container flex mx-auto space-x-12 w-1/4 py-8 font-bold text-lg justify-center">
+                <div><a href="https://www.linkedin.com/in/tony-kern-524227225/">LinkedIn</a></div>
+                <div><a href="mailto:tony.kern.dev@gmail.com">Email</a></div>
+            </div>
+                
+                <div>
+                    <p class="text-xs mx-auto text-center">Copyright 2022 Tony Kern.</p>
+                </div>
+            </div>
+            
+        </footer>
+    </section>
+
+    
+
+<script src="app.js"></script>
+</body>
+</html>
